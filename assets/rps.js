@@ -8,6 +8,8 @@ header up top
  
 textbox up top with a start button next to it
 
+
+
 when you enter your name into the text box and click
 start, display under the header "hello name! You are player
 # __." As soon as you click start, your name and 
