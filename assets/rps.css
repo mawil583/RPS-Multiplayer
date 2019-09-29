@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+    font-size: 5em; 
+}
+
+.col {
+    border: 1px solid black;
+    /* height: 30% !important; */
+}
+.player1 {
+    height: 15em;
+}
+
+.chat-display {
+    height: 15em;
+}
