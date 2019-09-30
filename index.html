@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="assets/rps.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+
 </head>
 
 <body>
@@ -18,12 +24,13 @@
         <div class="row">
             <div class="col">
                 <div class="name-input">
+                    <!-- Name input -->
                     <form class="form-inline">
                         <div class="form-group mx-sm-3 mb-2">
                             <label for="inputPassword2" class="sr-only">Name</label>
                             <input type="password" class="form-control" id="inputPassword2" placeholder="Name">
                         </div>
-                        <button type="submit" class="btn btn-primary mb-2">Start</button>
+                        <button type="submit" class="btn btn-primary mb-2" id="name-box">Start</button>
                     </form>
                 </div>
             </div>
@@ -49,18 +56,18 @@
             </div>
             <div class="col playerDiv">
 
-                    <div id="player2-name">
-                            waiting on player 1
-                        </div>
-                        <div id="rps-buttons2">
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Rock</button>
-                            <button type="button" class="btn btn-secondary btn-lg btn-block">Paper</button>
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Scissors</button>
-        
-                        </div>
-                        <div id="player2-score">
-                            Wins = 0; Losses = 0
-                        </div>
+                <div id="player2-name">
+                    waiting on player 1
+                </div>
+                <div id="rps-buttons2">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Rock</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Paper</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Scissors</button>
+
+                </div>
+                <div id="player2-score">
+                    Wins = 0; Losses = 0
+                </div>
 
             </div>
 
@@ -85,10 +92,9 @@
         </div>
 
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script> -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="assets/rps.js"></script>
 </body>
 
